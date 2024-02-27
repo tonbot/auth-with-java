@@ -1,0 +1,98 @@
+:root {
+   --primary-color-deep: #1C1C1C;
+   --secondary-color-light: #FAFAFF;
+   --accent-color-gray1: #EEF0F2;
+   --accent-color-gray2: #ECEBE4;
+   --accent-color-gray3: #DADDD8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    min-height: calc(100vh + 150px);
+    padding: 70px 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 100%;
+    background-color: var(--accent-color-gray1);
+    font-style: normal;
+    
+}
+
+a{
+    color: var(--primary-color-deep);
+    font-weight: 200;
+    text-align: center;
+}
+
+a:hover{
+  font-weight: 300;
+}
+
+body > :first-child{
+    text-align: center;
+    padding: 10px 0;
+}
+
+main{
+    background-color: var(--accent-color-gray2);
+    width: 90%;
+}
+
+
+
+/* title wrapper start here */
+.title-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-color-deep);
+    color: var(--secondary-color-light);
+    text-align: center;
+    padding: 20px;
+    padding-top: 30px;
+}
+.title-wrapper >div h1 {
+    font-size: 1.5em;
+   
+}
+/*title wrapper ends here*/
+
+/*form wrapper starts*/
+.form-wrapper {
+    padding: 50px 40px;
+}
+
+.form-wrapper > :first-child{
+    padding-bottom: 50px;
+    font-weight: 200;
+}
+
+.form-wrapper label{
+    display: block;
+    line-height: 2;
+    font-weight: 300;
+}
+.form-wrapper input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+.form-wrapper .btn-wrapper{
+    width: 100%;
+    padding: 20px 0;
+}
+.form-wrapper .btn-wrapper button{
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color-deep);
+    color: var(--secondary-color-light);
+}
+/*form wrapper ends*/

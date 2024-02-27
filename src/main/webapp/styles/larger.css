@@ -1,0 +1,19 @@
+@media screen and (min-width: 1025px) {
+    main{
+        background-color: var(--accent-color-gray2);
+        width: 50%;
+    }
+.title-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.title-wrapper >div h1 {
+    padding-left: 20px;
+    font-size: 1.5em;
+   
+}
+/* title wrapper ends here */
+
+}
