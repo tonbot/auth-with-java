@@ -28,10 +28,10 @@
         </div>
         <div class="form-wrapper">
             <% if( request.getAttribute("error") != null) {  %>
-            <p style="color: red; text-align: center"><%= request.getAttribute("error") %></p>
+            <p style="color: red; text-align: center; font-size: 18px"><%= request.getAttribute("error") %></p>
             <% } %>
-            <div>Required field are marked with asterik <b>*</b></div>
-           <form action="register" method="post">
+            <div>Required field are marked with asterisk <b>*</b></div>
+           <form action="userRegistration" method="post" >
             <label for="fname">FirsName<em>*</em></label>
             <input type="text" id="fname" name="fname" required value="<%= request.getAttribute("fname") != null ? request.getAttribute("fname") : "" %>">
             <label for="lname">LastName<em>*</em></label>
@@ -40,10 +40,12 @@
             <input type="text" id="uname" name="uname" required value="<%= request.getAttribute("uname") != null ? request.getAttribute("uname") : "" %>">
             <label for="email">Email<em>*</em></label>
             <input type="email" id="email" name="email" required value="<%= request.getAttribute("email") != null ? request.getAttribute("email") : "" %>">
+             <label for="phone">phone<em>*</em></label>
+            <input type="tel" id="phone" name="phone" required value="<%= request.getAttribute("phone") != null ? request.getAttribute("phone") : "" %>">
             <label for="password">Password<em>*</em></label>
-            <input type="password" id="password" name="pass" required value="<%= request.getAttribute("pass") != null ? request.getAttribute("pass") : "" %>">
+            <input type="password" id="pass" name="pass" required value="<%= request.getAttribute("pass") != null ? request.getAttribute("pass") : "" %>">
             <label for="cpassword">Confirm Password<em>*</em></label>
-            <input type="password" id="cpassword" name="cpass" required value="<%= request.getAttribute("cpass") != null ? request.getAttribute("cpass") : "" %>">
+            <input type="password" id="cpass" name="cpass" required value="<%= request.getAttribute("cpass") != null ? request.getAttribute("cpass") : "" %>">
             <div class="btn-wrapper">
                 <button type="submit" aria-label="Submit">Submit</button>
             </div>

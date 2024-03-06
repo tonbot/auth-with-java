@@ -73,6 +73,7 @@ main{
 .form-wrapper > :first-child{
     padding-bottom: 50px;
     font-weight: 200;
+    
 }
 
 .form-wrapper label{
